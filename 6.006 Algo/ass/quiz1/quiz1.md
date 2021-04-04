@@ -21,7 +21,7 @@ P3:
 counting sort O(n)
 merge sort O(nlogn)
 insertion sort O(n)
-radix sort: make sure the "keys" are bounded in some way! O(nC)
+radix sort: make sure the "keys" are bounded in some way! O-*0
 
 P4:
 consider parent: if its left child, do nothing
@@ -42,4 +42,4 @@ def shortest_path(node):
 ```
 
 P8:
-expected chain length
+expected chain 
