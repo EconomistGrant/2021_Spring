@@ -33,7 +33,7 @@ at a COA:
     finished explore COA:
     if in = low: a SCC is done, collect nodes in in_stack and label them
     
-
+tto
 there might be some node not explored: the "root" for example?
 outter cycle: for each node u in G, if in[u] == 0, DFS
 
@@ -45,6 +45,7 @@ DFS tree:
 1. root is an articulation point <=> at least two children
 two childrem -> articulation: no cross edge
 articulation -> two children: 
+
 2. nonroot vertex: an articulation point <=> 
 v has a child s such that there is no back edge from s or any descendant of s to a ancestor of v
 

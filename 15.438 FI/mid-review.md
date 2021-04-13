@@ -2,6 +2,12 @@
 ## b.e.b vs Effective Annual Yields
 assume return of y/2 every six months, y
 effective: r = (1+y/2)^2 - 1
+
+```py
+RATE(nper = 10, pmt = 70, pv = -1300, fv = 1000) * 2
+PV(rate = 0.04, nper = 20, pmt, fv)
+PV(rate = 0.03, nper = 20, pmt)
+```
 ## dirty vs clean price
 quoted price: clean price, assume next coupon six months away
 dirty price = clean + accrued interest
@@ -13,7 +19,7 @@ yield to fisrt call: assume issuer will excercise
 yield to call < YTM <=> Q < F, "in money", will likely to exercise
 yield to worst: lowest yeild
 ## Discount Securities vs Simple interest securities
-DS: P = F(1 - d*t / 360)
+DS: P = F(1 - d*t / 360) 
 d: quoted discount rate
 
 SI: P = F / (1+i*t/360)
@@ -83,11 +89,56 @@ what, how much, when, price
 p = f / (1+y)^t
 pricing: directly discount / use forward rates (see page 11)
 ## RPs
-short term bond with collateralized seccurities 
-## Future products
+short term bond with collateralized securities
+borrower: sell securities to lender, agreed to buy back
+
+reverse RP: "long" securities
+**synthetic forward**: borrow money, buy bond, enter RP to borrow money with bond
+t1: pay money, receive bond (same structure as forward)
+
+## Future contracts
+1. 3-month eurodollar deposites
+each contract 1m fv, three monts deposits paying 90-day libor, quote 100 - i
+1 basis = $25, rate up, quote down, long lose money
+use of this: page 35
+
+2. 3-month SOFR futures contract, backward looking, no term structure
+3. US treasury bond futures contract
+physically delivered, each contract for 100,000 face value of any 15-25 yrs bond
+conversion factor
+options: benefit sellers, cheapest to deliver: (maximizes settlement price * conversion factor - spot bond price)
 
 ## Durations of futures
+duration of f(0,3,4): equivalent to long 4 year and short 3 year, both having same PV
 
+#TODO: p47 example
 ## Swaps
+fixed for floaing, long side = fixed rate payor, gain when rate going up
+### Pricing
+float bond always at par at reset dates
+initialization: fixed rate is determined by setting swap PV 0
+implementation: use LIBOR futures rates -> yeild -> price fixed rate
+### Duration
+fixed duration: trivial
+floating duration: time until next reset / (1+Y/k)
+## Use of Swap 
+1. Maturity/duration restructuring
+2. Forward rate agreement?
+3. Hedge Balance Sheet Risk
+nonperfect: page 25
+4. Seeking better borrowing terms: relative advantage, trade
+5. Speculation: 
+- rising rate -> enter swap, shorten duration
+- spread: long in undervalued, long <=> enter RP as lender to receive bond
 
-## Speculative Strategies
+
+
+# Quick Check
+synthetic short: sample Q4 Q5
+
+clean dirty price: ass1 Q1 Q2
+simple vs discount Q3
+Total returns Q5
+Yield to first call Q6
+
+forward rates Ass2 Q4

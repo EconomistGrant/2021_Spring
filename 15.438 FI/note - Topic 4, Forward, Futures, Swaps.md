@@ -60,7 +60,7 @@ essentially: lock in future cash flows, delay cash to t1, and receive bond with 
 all trade on chicago mercantile exchange
 
 1. 3-month eurodollar depostis
-each contract for 1mm fv, three month deposits paying the rate set in the futures contract
+each contract for 1m fv, three month deposits paying the rate set in the futures contract
 quoted on simple interest rate
 
 "march contract"
@@ -91,7 +91,7 @@ each contract is for 100,000 facr value of any 15-25 years maturity bond
 Price = Quoted Price * Conversion factor(bond-specific) * 1000
 
 options:
-1) quality delivery option
+1) quality delivery option: cheapest to deliver, maximizes settlement price * conversion factor - spot bond price
 2) delivery option
 3) wildcard option
 
