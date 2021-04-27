@@ -27,7 +27,7 @@ priority queue: vertices, key = distance
 while pq:
     v1 = pq.pop_min; S.add(v1)
     for (v1,v2) in E:
-    try to relax(v1,v2)
+        try to relax(v1,v2)
     pq.update_key(v2)
 
 return d, parent
@@ -69,3 +69,7 @@ Best Case: Fibonacci Heap O(VlogV + E)
 
 Heap O((V+E)logV)
 Fibonacci heap: O(VlogV + E)
+
+进入孵化
+
+不可以暗示学校
