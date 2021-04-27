@@ -22,12 +22,13 @@ condensation graph: DAG(directed accyclical graph) created by collapsing SCC
 in[u]: discovery time, DFS number
 low[u]: minimal discovery time for a path starting at u
 
-at a COA:
-    consider a adjacent node
+at a COA (node u):
+    consider a adjacent node v
     if not explored:
-        low =  min (low, low of what you backtrack from?*the one you just finished DFS* )
+        DFS(v)
+        low[u] =  min (low[u], low[v])
     elif explored and in_stack(a back edge):
-        low = min (low, low of the explored)
+        low = min (low, in[v])
     else: dont no nothing *cross edge/forward edge*
     //
     finished explore COA:

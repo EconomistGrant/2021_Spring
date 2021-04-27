@@ -63,3 +63,23 @@ coupon tax exempt, capital gains are not: R* = R/(1-T)
 
 general obligation bonds / revenue bonds
 Risk waries across issues
+
+
+# PART 2
+# Effective duration and effective convexity
+$D_{\text {eff }}=\frac{1}{\text { price }_{\text {curent rate }}} \times \frac{\text { price }_{\text {rates fall }}-\text { price }_{\text {rate rise }}}{2 \mathrm{~s}}$
+
+$C_{eff} = \frac{1}{\text { Price }} \times \frac{\left(\mathrm{P}_{\text {rates fall }}-\mathrm{P}_{\text {original }}\right)-\left(\mathrm{P}_{\text {original }}-\mathrm{P}_{\text {rates rise }}\right)}{(\mathrm{s})^{2}}$
+
+
+model-dependent, not universal!
+
+# Caps, Floors, Collar
+cap: limit the maximum amount of interest paid
+floor: limit the minimum amount of interest paid
+collar: cap & floor
+
+cap: strip of call option on interest payment
+
+# Swaption
+the option to swap
